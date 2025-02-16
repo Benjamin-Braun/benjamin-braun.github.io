@@ -1,0 +1,30 @@
+html {
+	background-color: #444444;
+}
+
+body {
+	width: 50%;
+	margin-left: 25%;
+    font-size: 1.2em;
+}
+
+img {
+    width: 25%;
+}
+
+p, h1, h2, h3, h4, a, li {
+    color: #ffffff;
+}
+
+h4 {
+    margin-bottom: 12px;
+}
+
+audio {
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    color: #ffffff;
+}

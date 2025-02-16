@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Psychose Podcast</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1><a href="index.html">Psychose Podcast</a></h1>
+        <hr>
+        <!--<h2>Über Uns</h2>
+        <p>Bla bla bla da da da</p>
+        <h2>Folgen</h2>-->
+        <h4>Folge 00: Der Sinus einer Summe</h4>
+        <audio controls><source src="audio/test.mp3" type="audio/mpeg">Ihr Browser unterstützt die Audio wiedergabe nicht.</audio><br>
+        <a href="#" onclick="toc()">Informationen</a> <a href="audio/test.mp3" download="test.mp3">Download</a> <a href="lizenz.html">Lizenz</a><br>
+        <div id="00i"></div>
+        <h4>Folge 01: Wirre Politik & Meinung</h4>
+        <audio controls><source src="audio/psychose.folge.01.mp3" type="audio/mpeg">Ihr Browser unterstützt die Audio wiedergabe nicht.</audio><br>
+        <a href="#" onclick="f01()">Informationen</a> <a href="audio/psychose.folge.01.mp3" download="psychose.folge.01.mp3">Download</a> <a href="lizenz.html">Lizenz</a><br>
+        <div id="01i"></div>
+
+        <!--<h2>Zitate</h2>
+        <ul>
+            <li>"Jetzt sind die Städte überwacht, man wird gefilmt bei Tag und Nacht, was ich Freiheit nenne ist Schmerz, für jedes wirklich freie Herz." <i>- N/A</i></li>
+        </ul>-->
+
+        <h2>(sehr) coole Bilder</h2>
+        <img src="img/01.jpg">
+        <img src="img/02.jpg">
+    </body>
+    <footer>Copyright &copy; Psychose Podcast</footer>
+
+    <script>
+        var show = 0;
+        function toc(){
+            if(show != -1){
+                document.getElementById("00i").innerHTML = "<p>Die 0te Folge ist eine Test-Folge für die Website. Normalerweise nicht sichtbar...</p>";
+                show = -1;
+            }else if(show == -1){
+                document.getElementById("00i").innerHTML = "";
+                show = 0;
+            }
+        }
+
+        function f01(){
+            if(show != 1){
+                document.getElementById("01i").innerHTML = "<p>Sehr wirres Gerede über Politik und diverse Meinungen. Die Folge ist aus einem Witz so lange, normalerweise wären das mehrere kleine Folgen.</p><p>Inhalte:</p><ul><li>Parteien</li><li>Privatisierung von Infrastruktur</li><li>Krankheitssystem</li><li>Arbeitslosigkeit & Sozialstaat</li><li>Drogen</li><li>Polizei</li><li>aktive Sterbehilfe</li><li>Gewalt</li><li>Kirche & Religion</li><li>Datenschutz</li><li>Schule</li><li>psychologische Krankenhilfe</li><li>Internet</li><li>Steuern</li><li>Gesellschaft & Zukunft</li><li>\"Die Jugend von Heute\"</li></ul>";
+                show = 1;
+            }else if(show == 1){
+                document.getElementById("01i").innerHTML = "";
+                show = 0;
+            }
+        }
+    </script>
+</html>
